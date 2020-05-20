@@ -1,0 +1,120 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Franklin Gothic Heavy", serif;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
+
+#notFoundImg {
+    width: 35vw;
+    max-width: 558px;
+    margin-left: 260px;
+}
+
+#textHolder {
+    display: flex;
+    flex-flow: column nowrap;
+    padding-left: 4vw;;
+}
+
+#notFoundText {
+    margin-top: 18vw;
+    font-size: 2vw;
+    letter-spacing: 1px;
+    color: #4b4b4b;
+}
+
+#returnBtn {
+    font-family: "Franklin Gothic Heavy", serif;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: #007b84;
+    font-size: 1.25vw;
+    padding-top: 1.2vw;
+    padding-bottom: 1.2vw;
+    border-radius: 1.1vw;
+}
+
+#returnBtn:active {
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 1250px){
+    #notFoundImg {
+        width: 38vw;
+        margin-left: 15vw;
+    }
+    #textHolder {
+        padding-left: 5vw;
+    }
+    #notFoundText {
+        margin-top: 19vw;
+        font-size: 2.5vw;
+    }
+    #returnBtn {
+        font-size: 1.5vw;
+        padding-top: 1.5vw;
+        padding-bottom: 1.5vw;
+        border-radius: 1.4vw;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    body {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    #notFoundImg {
+        width: 48vw;
+        margin-left: 0;
+    }
+
+    #textHolder {
+        align-items: center;
+        padding-left: 0;
+    }
+
+    #notFoundText {
+        margin-top: 5vw;
+        font-size: 3.75vw;
+    }
+
+    #returnBtn {
+        width: 36vw;
+        font-size: 3vw;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+        border-radius: 1.6vw;
+    }
+}
+
+@media screen and (max-width: 535px) {
+    #notFoundImg {
+        width: 85%;
+    }
+
+    #textHolder {
+        align-items: initial;
+    }
+
+    #notFoundText {
+        margin-top: 10vw;
+        font-size: 5.5vw;
+    }
+
+    #returnBtn {
+        width: auto;
+        font-size: 4.5vw;
+        padding-top: 3vw;
+        padding-bottom: 3vw;
+        border-radius: 2.6vw;
+    }
+}

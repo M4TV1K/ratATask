@@ -1,0 +1,290 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Franklin Gothic Heavy", serif;
+    width: 100%;
+    background-color: #00676f;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+#allHolder {
+    margin-top: 4vw;
+}
+
+#logoHolder {
+    display: flex;
+    justify-content: center;
+}
+
+#logo {
+    width: 16.1vw;
+}
+
+button:active {
+    opacity: 0.6;
+}
+
+#nicknameHolder {
+    margin-top: 5vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+#nickname {
+    letter-spacing: 0.7px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: white;
+    font-size: 1.45vw;
+}
+
+#photoAskContainer {
+    margin-top: 0.6vw;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+#profilePhoto {
+    width: 10vw;
+    height: 9vw;
+}
+
+#askForm {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+}
+
+#askInput {
+    font-size: 1.2vw;
+    font-family: "Candara", serif;
+    width: 30vw;
+    height: 8vw;
+    border-radius: 1vw;
+    padding: 0.5vw 0.9vw;
+    margin-left: 3vw;
+}
+
+#askInput:focus {
+    outline: none;
+    border: 1px solid black;
+}
+
+::placeholder {
+    color: #e6e6e6;
+}
+
+#askBtn {
+    font-family: "Franklin Gothic Heavy", serif;
+    margin-top: 0.65vw;
+    color: #005157;
+    outline: none;
+    border: none;
+    font-size: 1.15vw;
+    letter-spacing: 1px;
+    background-color: #faeeee;
+    padding: 0.5vw 1.2vw;
+    border-radius: 1.2vw;
+}
+
+#askBtn:hover {
+    background-color: transparent;
+}
+
+#questionsHolder {
+    margin-top: 5vw;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: white;
+    margin-bottom: 5vw;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    border-radius: 1.5vw;
+}
+
+.question {
+    margin-top: 2vw;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.questionHeader {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.questionText, .answer {
+    font-family: "Candara", serif;
+    color: #3d3d3d;
+}
+
+.questionText {
+    font-size: 1.64vw;
+    margin-bottom: 0;
+}
+
+.answer {
+    width: 22vw;
+    font-size: 1.2vw;
+}
+
+@media screen and (max-width: 1300px) {
+    #allHolder {
+        margin-top: 5vw;
+    }
+    #logo {
+        width: 20vw;
+    }
+    #nicknameHolder {
+        margin-top: 5.5vw;
+    }
+    #nickname {
+        font-size: 1.8vw;
+    }
+    #profilePhoto {
+        width: 12vw;
+        height: 11vw;
+    }
+    #changePhotoBtn {
+        left: -3.5vw;
+        top: -8.5vw;
+    }
+    #askInput {
+        font-size: 1.5vw;
+        width: 33vw;
+        height: 9.7vw;
+        border-radius: 1.5vw;
+        padding: 0.6vw 1vw;
+    }
+    #askBtn {
+        margin-top: 0.8vw;
+        font-size: 1.6vw;
+        padding: 0.7vw 1.4vw;
+        border-radius: 1.2vw;
+    }
+
+    #questionsHolder {
+        margin-top: 6vw;
+        margin-bottom: 6vw;
+    }
+
+    .question {
+        margin-top: 3vw;
+    }
+    .questionText {
+        font-size: 2vw;
+    }
+    .answer {
+        width: 28vw;
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    #allHolder {
+        margin-top: 6vw;
+    }
+    #logo {
+        width: 25vw;
+    }
+    #nicknameHolder {
+        margin-top: 7vw;
+    }
+    #nickname {
+        font-size: 2.3vw;
+    }
+    #profilePhoto {
+        width: 15vw;
+        height: 13vw;
+    }
+    #askInput {
+        font-size: 1.95vw;
+        width: 38vw;
+        height: 11vw;
+        border-radius: 1.6vw;
+        padding: 0.8vw 1.1vw;
+    }
+    #askBtn {
+        margin-top: 1.1vw;
+        font-size: 2vw;
+        padding: 1vw 1.6vw;
+        border-radius: 1.4vw;
+    }
+    #questionsHolder {
+        margin-top: 8vw;
+        margin-bottom: 8vw;
+        padding-left: 2.5vw;
+        padding-right: 2.5vw;
+    }
+    .questionText {
+        font-size: 2.6vw;
+    }
+    .answer {
+        width: 34vw;
+        font-size: 1.9vw;
+        line-height: 2.8vw;
+    }
+}
+
+@media screen and (max-width: 535px) {
+    #allHolder {
+        margin-top: 8vw;
+    }
+    #logo {
+        width: 40vw;
+    }
+    #nicknameHolder {
+        margin-top: 10vw;
+    }
+    #nickname {
+        font-size: 3.6vw;
+    }
+    #photoAskContainer {
+        margin-top: 1.2vw;
+    }
+    #profilePhoto {
+        width: 21vw;
+        height: 18.5vw;
+    }
+    #askInput {
+        font-size: 3.3vw;
+        width: 48vw;
+        height: 16.4vw;
+        border-radius: 2.2vw;
+        padding: 1vw 1.3vw;
+        margin-left: 5vw;
+    }
+    #askBtn {
+        margin-top: 1.7vw;
+        font-size: 3.4vw;
+        padding: 1.4vw 2.7vw;
+        border-radius: 2.2vw;
+    }
+    #questionsHolder {
+        margin-top: 11vw;
+        margin-bottom: 11vw;
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+
+    .question {
+        margin-top: 4vw;
+    }
+    .questionText {
+        width: 52vw;
+        font-size: 4.3vw;
+    }
+    .answer {
+        width: 45vw;
+        font-size: 3.3vw;
+        line-height: 4.4vw;
+    }
+}

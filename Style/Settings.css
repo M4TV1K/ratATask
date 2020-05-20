@@ -1,0 +1,231 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: "Franklin Gothic Heavy", serif;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+#logInArt {
+    margin-top: 50px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo {
+    width: 15vw;
+    margin-bottom: 2vw;
+}
+
+#changePhoto {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+}
+
+#profilePhoto {
+    width: 7vw;
+    border: 2.5px solid #e6e6e6;
+    border-radius: 15px;
+}
+
+.changeText {
+    font-family: Candara, serif;
+    font-weight: bold;
+    color: #3e3e3e;
+    margin-bottom: 5px;
+    font-size: 1.1vw;
+}
+
+#changePasswordForm {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.inputBox {
+    width: 23vw;
+    padding: 1.2vw 1.6vw;
+    font-family: Candara, serif;
+    font-size: 1.4vw;
+    border: 2.5px solid #e6e6e6;
+    border-radius: 15px;
+    margin-bottom: 1.5vw;
+}
+.inputBox:focus {
+    outline: none;
+    border-color: #8c8c8c;
+}
+::placeholder {
+    color: #e6e6e6;
+}
+#nicknameInput {
+    border-radius: 0;
+}
+
+.btn:active {
+    opacity: 0.7;
+}
+
+#loginBtn {
+    font-family: "Franklin Gothic Heavy", serif;
+    margin-top: 1vw;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: #007b84;
+    font-size: 1.6vw;
+    padding-top: 1.4vw;
+    padding-bottom: 1.4vw;
+    border-radius: 1.1vw;
+}
+
+.cancelBtn {
+    font-family: Candara, serif;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #00676f;
+    font-size: 1.5vw;
+}
+
+#returnBtn {
+    margin-top: 1vw;
+}
+
+#quitBtn {
+    margin-top: 0.2vw;
+}
+
+@media screen and (max-width: 1300px) {
+    #logo {
+        width: 17vw;
+        margin-bottom: 1.3vw;
+    }
+
+    #profilePhoto {
+        width: 9vw;
+    }
+
+    .changeText {
+        font-size: 1.3vw;
+    }
+
+    .inputBox {
+        font-size: 1.65vw;
+        padding: 1.4vw 1.8vw;
+    }
+
+    #loginBtn {
+        margin-top: 1.4vw;
+        font-size: 1.7vw;
+        padding-top: 1.6vw;
+        padding-bottom: 1.6vw;
+        border-radius: 15px;
+    }
+
+    #registerBtn {
+        margin-top: 1.3vw;
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    body {
+        justify-content: center;
+    }
+    #logInArt {
+        margin-top: 0;
+    }
+
+    #logo {
+        width: 23vw;
+        margin-bottom: 2vw;
+    }
+
+    .changeText {
+        font-size: 1.8vw;
+    }
+
+    #profilePhoto {
+        width: 10vw;
+    }
+
+    .inputBox {
+        width: 40vw;
+        font-size: 2.2vw;
+        padding: 2vw 2.3vw;
+    }
+
+    #loginBtn {
+        margin-top: 2vw;
+        font-size: 2.1vw;
+        padding: 2.35vw 2.3vw;
+        border-radius: 1.5vw;
+    }
+
+    .cancelBtn {
+        font-size: 2.3vw;
+    }
+    #returnBtn {
+        margin-top: 1.5vw;
+    }
+    #quitBtn {
+        margin-top: 0.4vw;
+    }
+}
+
+@media screen and (max-width: 535px){
+    #logo {
+        width: 36vw;
+        margin-bottom: 6vw;
+    }
+
+    #changePhoto {
+        margin-bottom: 4vw;
+    }
+
+    #profilePhoto {
+        width: 18vw;
+    }
+
+    .changeText {
+        font-size: 3.5vw;
+    }
+
+    .inputBox {
+        border: 2.2px solid #e6e6e6;
+        width: 70vw;
+        font-size: 4.2vw;
+        padding: 4vw 5vw;
+        margin-bottom: 3.5vw;
+    }
+
+    #loginBtn {
+        margin-top: 5vw;
+        font-size: 4vw;
+        padding-top: 4.25vw;
+        padding-bottom: 4.25vw;
+        border-radius: 3vw;
+    }
+
+    .cancelBtn {
+        font-size: 4.6vw;
+    }
+    #returnBtn {
+        margin-top: 3.5vw;
+    }
+    #quitBtn {
+        margin-top: 0.5vw;
+    }
+}
+

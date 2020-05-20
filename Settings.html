@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Налаштування</title>
+    <link rel="stylesheet" href="Style/Settings.css">
+</head>
+<body>
+    <form id="logInArt">
+        <img id="logo" src="Images/LogInPage/BlueLogo.png" alt="Синє лого Рататаску">
+        <article id="changePhoto">
+            <p class="changeText">Змінити фото</p>
+            <img id="profilePhoto" src="Images/Profile/profile-image.png" alt="Ваша фотографія">
+        </article>
+
+        <article id="changeNickname">
+            <p class="changeText">Змінити нікнейм</p>
+            <input class="inputBox" type="text" placeholder="Введіть новий нікнейм" maxlength="50">
+        </article>
+
+        <article id="changePassword">
+            <p class="changeText">Змінити пароль</p>
+            <section id="changePasswordForm">
+                <input class="inputBox" type="text" placeholder="Введіть поточний пароль" maxlength="25">
+                <input class="inputBox" type="password" placeholder="Введіть новий пароль" maxlength="50">
+                <input id="loginBtn" class="btn" type="submit" value="Змінити" required maxlength="40">
+            </section>
+        </article>
+        <button id="returnBtn" class="cancelBtn">Повернутися</button>
+        <button id="quitBtn" class="cancelBtn">Вийти</button>
+    </form>
+</body>
+</html>

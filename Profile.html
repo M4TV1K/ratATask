@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Профіль</title>
+    <link rel="stylesheet" href="Style/Profile.css">
+    <script src="Script/Profile.js"></script>
+</head>
+<body>
+    <article id="allHolder">
+        <article id="logoHolder">
+            <img id="logo" src="Images/Profile/logo.png" alt="Лого Рататаску">
+        </article>
+        <article id="notificationHolder">
+            <button id="notificationBtn"></button>
+        </article>
+
+        <article id="nicknameHolder">
+            <p id="nickname">@nickname</p>
+            <button id="changeNameBtn" class="pencil"></button>
+        </article>
+
+        <article id="photoAskContainer">
+            <section id="photoHolder">
+                <img id="profilePhoto" src="Images/Profile/profile-image.png" alt="Фото твого профілю">
+                <button id="changePhotoBtn" class="pencil"></button>
+            </section>
+            <form id="askForm">
+                <textarea id="askInput" placeholder="Введіть питання"></textarea>
+                <button id="askBtn">ЗАПИТАТИ</button>
+            </form>
+        </article>
+
+        <article id="questionsHolder">
+            <article id="question-1" class="question">
+                <section class="questionHeader">
+                    <h2 class="questionText">Запитання запитання запитання?</h2>
+                    <section class="timeAndDeleteHolder">
+                        <p class="time">5 годин тому</p>
+                        <button id="delete-1" class="deleteButton"></button>
+                    </section>
+                </section>
+                <p class="answer">
+                    Відповідь відповідь відповідь відповідь
+                    відповідь відповідь.
+                </p>
+            </article>
+
+            <article id="question-2" class="question">
+                <section class="questionHeader">
+                    <h2 class="questionText">Запитання запитання запитання?</h2>
+                    <section class="timeAndDeleteHolder">
+                        <p class="time">5 годин тому</p>
+                        <button id="delete-2" class="deleteButton"></button>
+                    </section>
+                </section>
+                <p class="answer">
+                    Відповідь відповідь відповідь відповідь
+                    відповідь відповідь.
+                </p>
+            </article>
+
+        </article>
+    </article>
+</body>
+</html>

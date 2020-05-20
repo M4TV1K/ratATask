@@ -1,0 +1,159 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: "Franklin Gothic Heavy", serif;
+    width: 100%;
+}
+
+#logInArt {
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo {
+    width: 15vw;
+    margin-bottom: 1vw;
+}
+
+form {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.inputBox {
+    width: 28vw;
+    padding: 1.8vw 1.6vw;
+    font-family: Candara, serif;
+    font-size: 1.4vw;
+    border: 1px solid #e6e6e6;
+}
+.inputBox:focus {
+    outline: none;
+    border-color: #333333;
+}
+::placeholder {
+    color: #e6e6e6;
+}
+#nicknameInput {
+    border-radius: 1vw;
+}
+
+.btn:active {
+    opacity: 0.7;
+}
+
+#loginBtn {
+    font-family: "Franklin Gothic Heavy", serif;
+    margin-top: 1vw;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: #007b84;
+    font-size: 1.6vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    border-radius: 1.1vw;
+}
+
+#registerBtn {
+    font-family: Candara, serif;
+    font-weight: bold;
+    margin-top: 1vw;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #00676f;
+    font-size: 1.5vw;
+}
+
+@media screen and (max-width: 1300px) {
+    #logo {
+        width: 17vw;
+        margin-bottom: 1.3vw;
+    }
+
+    .inputBox {
+        font-size: 1.65vw;
+        padding: 2vw 1.8vw;
+    }
+
+    #passwordInput {
+        border-radius: 0 0 1.5vw 1.5vw;
+    }
+
+    #loginBtn {
+        margin-top: 1.3vw;
+        font-size: 1.7vw;
+        padding-top: 2.2vw;
+        padding-bottom: 2.2vw;
+        border-radius: 1.2vw;
+    }
+
+    #registerBtn {
+        margin-top: 1.3vw;
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 890px){
+    #logo {
+        width: 22vw;
+        margin-bottom: 2vw;
+    }
+
+    .inputBox {
+        width: 40vw;
+        font-size: 2.2vw;
+        padding: 3.5vw 2.5vw;
+    }
+
+    #nicknameInput {
+        border-radius: 1.7vw;
+    }
+
+    #loginBtn {
+        margin-top: 2vw;
+        font-size: 2.1vw;
+        padding-top: 3.3vw;
+        padding-bottom: 3.3vw;
+        border-radius: 1.5vw;
+    }
+
+    #registerBtn {
+        margin-top: 1.5vw;
+        font-size: 2.3vw;
+    }
+}
+
+@media screen and (max-width: 535px){
+    #logo {
+        width: 35vw;
+        margin-bottom: 3vw;
+    }
+
+    .inputBox {
+        width: 70vw;
+        font-size: 4.2vw;
+        padding: 6vw 4.5vw;
+    }
+
+    #loginBtn {
+        margin-top: 3vw;
+        font-size: 4vw;
+        padding-top: 5.25vw;
+        padding-bottom: 5.25vw;
+        border-radius: 3vw;
+    }
+
+    #registerBtn {
+        font-size: 4.6vw;
+    }
+}
+
